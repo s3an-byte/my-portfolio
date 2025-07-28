@@ -1,0 +1,33 @@
+body{
+    font-family: arrial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #550f0f;
+    color:rgb(194, 175, 133);
+    background-image: image(src="");
+
+}
+
+header{
+      
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff1f1;
+            padding: 40px 0;
+            text-align: center;
+        }
+    header img {
+            opacity: 0.8;
+        }
+footer{
+    background-color: #553b3b;
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

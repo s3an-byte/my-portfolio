@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Kamau Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+   
+</head>
+<body>
+    <header>
+        <h1>Paul Kamau</h1>
+        
+        <p>Python Programmer | Web Developer | Computer Science Student</p>
+    </header>
+
+    <section id="about" style="display: flex; align-items: center; gap: 20px;">
+        <img src="images/profile picture.jpg" alt="Paul Kamau" style="width:120px; height:200px; border-radius:12px; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <div>
+            <h2>About Me</h2>
+            <p>Brief description about myself, background & goals.<br>
+            <strong>EDUCATION:</strong> DIPLOMA IN COMPUTER SCIENCE<br>
+            <strong>SCHOOL:</strong> TAITA TAVETA NATIONAL POLYTECHNIC</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Finance tracker</h3>
+            <p>A web app to track income and expenses using JS.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website to showcase my work and skills.</p>
+        </div>
+
+        <div class="projects">
+            <h3>school Website</h3>
+            <p>A website for a school to provide information about courses, faculty, and admissions.</p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+            <h2>Contact Me</h2>
+            <p>tel: +254 769 347 430</p>
+            <p>Email: paulngunyikamau@gmail.com</p>
+    </section>
+    <hr>
+    <script>
+        // Make the email clickable
+        document.addEventListener("DOMContentLoaded", function() {
+            var emailElement = Array.from(document.querySelectorAll("#contact p"))
+                .find(p => p.textContent.includes("paulngunyikamau@gmail.com"));
+            if (emailElement) {
+                emailElement.innerHTML = 'Email: <a href="mailto:paulngunyikamau@gmail.com">paulngunyikamau@gmail.com</a>';
+            }
+        });
+    </script>
+    <footer>&copy; 2025 Paul Kamau
+
+    </footer>
+</body>
+</html>
